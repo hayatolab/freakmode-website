@@ -19,7 +19,7 @@ export const config = {
   app: {
     name: "FreakMode",
     description:
-      "Log your grind. Stay on streaks. Grow stronger. With your crew.",
+      "Transforme treinos em desafios épicos. Compete com amigos, mantém streaks e evolui junto com sua crew.",
     url: "https://freakmode.app",
   },
 

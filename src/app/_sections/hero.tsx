@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { Button } from "../../components/ui/button";
 import { Input } from "../../components/ui/input";
-import { LetteringLogo } from "../../components/icons/lettering-logo";
 import { submitEmailToHubSpot } from "../../lib/hubspot";
 import { trackLeadSubmission } from "../../lib/analytics";
 
@@ -16,7 +15,7 @@ export const Hero = () => {
     e.preventDefault();
 
     if (!email) {
-      setMessage("❌ Por favor, digite seu e-mail");
+      setMessage("Digite seu e-mail para entrar no desafio");
       return;
     }
 
@@ -31,14 +30,14 @@ export const Hero = () => {
         // Enviar evento para Google Analytics
         trackLeadSubmission("hero_form");
 
-        setMessage("✅ Acesso solicitado com sucesso! Verifique seu e-mail.");
+        setMessage("Você entrou no desafio! Aguarde instruções no seu e-mail.");
         setEmail("");
       } else {
-        setMessage("❌ Erro ao enviar. Tente novamente.");
+        setMessage("Ops! Tente novamente.");
       }
     } catch (error) {
       console.error("Erro no formulário:", error);
-      setMessage("❌ Erro ao enviar. Tente novamente.");
+      setMessage("Ops! Tente novamente.");
     } finally {
       setIsLoading(false);
     }
@@ -49,17 +48,18 @@ export const Hero = () => {
       <div className="max-w-4xl mx-auto text-center space-y-8 z-10">
         {/* Main Heading */}
         <div className="space-y-1">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-freakmode-navy leading-tight font-hagrid">
-            Sua nova maneira de
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold text-freakmode-navy leading-tight font-hagrid">
+            Desafie seus amigos
           </h1>
-          <h1 className="text-4xl md:text-6xl font-extrabold text-freakmode-red leading-tight font-hagrid">
-            Construir Músculo
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold text-freakmode-red leading-tight font-hagrid">
+            Evolua junto
           </h1>
         </div>
 
         {/* Subtitle */}
-        <p className="text-lg md:text-xl text-freakmode-gray-700 max-w-2xl mx-auto font-medium leading-relaxed">
-          Log your grind. Stay on streaks. Grow stronger. With your crew.
+        <p className="text-base sm:text-lg md:text-xl text-freakmode-gray-700 max-w-2xl mx-auto font-medium leading-relaxed">
+          Transforme treinos em desafios épicos. Mantém streaks, compete com
+          amigos e evolui junto com sua crew.
         </p>
 
         {/* Email Form */}
@@ -78,9 +78,9 @@ export const Hero = () => {
           <Button
             type="submit"
             disabled={isLoading}
-            className="whitespace-nowrap"
+            className="whitespace-nowrap sm:w-fit w-full"
           >
-            {isLoading ? "Enviando..." : "Desbloquear acesso"}
+            {isLoading ? "Entrando..." : "Entrar no desafio"}
           </Button>
         </form>
 

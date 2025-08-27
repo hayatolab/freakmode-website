@@ -48,16 +48,16 @@ const hagridText = localFont({
 });
 
 export const metadata: Metadata = {
-  title: `${config.app.name} — Sua nova maneira de construir músculo`,
+  title: `${config.app.name} — Desafios fitness com amigos`,
   description:
-    "Gamifique seus treinos. Construa músculo, mantenha streaks e cresça junto com sua crew. Entre no FreakMode!",
+    "Transforme treinos em desafios épicos! Compete com amigos, mantém streaks e evolui junto com sua crew. Sua academia virou um jogo!",
   metadataBase: new URL(config.app.url),
 
   // Open Graph
   openGraph: {
-    title: `${config.app.name} — Sua nova maneira de construir músculo`,
+    title: `${config.app.name} — Desafios fitness com amigos`,
     description:
-      "Gamifique seus treinos. Construa músculo, mantenha streaks e cresça junto com sua crew. Entre no FreakMode!",
+      "Transforme treinos em desafios épicos! Compete com amigos, mantém streaks e evolui junto com sua crew. Sua academia virou um jogo!",
     url: config.app.url,
     siteName: config.app.name,
     images: [
@@ -75,9 +75,9 @@ export const metadata: Metadata = {
   // Twitter Card
   twitter: {
     card: "summary_large_image",
-    title: `${config.app.name} — Sua nova maneira de construir músculo`,
+    title: `${config.app.name} — Desafios fitness com amigos`,
     description:
-      "Gamifique seus treinos. Construa músculo, mantenha streaks e cresça junto com sua crew. Entre no FreakMode!",
+      "Transforme treinos em desafios épicos! Compete com amigos, mantém streaks e evolui junto com sua crew. Sua academia virou um jogo!",
     images: ["/opengraph-freakmode.png"],
     creator: "@freakmodeapp",
     site: "@freakmodeapp",

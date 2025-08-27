@@ -32,7 +32,7 @@ export const Footer = () => {
           <div className="space-y-4">
             <AppIcon className="h-8 w-auto" variant="dark" />
             <p className="text-freakmode-gray-400 text-sm max-w-xs">
-              Log your grind. Stay on streaks. Grow stronger. With your crew.
+              Transforme treinos em desafios épicos. Evolua junto com sua crew.
             </p>
           </div>
 
