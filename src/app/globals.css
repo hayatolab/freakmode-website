@@ -17,6 +17,7 @@
   --color-freakmode-gray-100: var(--freakmode-gray-100);
   --color-freakmode-gray-200: var(--freakmode-gray-200);
   --color-freakmode-gray-300: var(--freakmode-gray-300);
+  --color-freakmode-gray-400: var(--freakmode-gray-400);
   --color-freakmode-gray-500: var(--freakmode-gray-500);
   --color-freakmode-gray-600: var(--freakmode-gray-600);
   --color-freakmode-gray-700: var(--freakmode-gray-700);
@@ -66,6 +67,7 @@
   --freakmode-gray-100: #f3f4f6;
   --freakmode-gray-200: #e5e7eb;
   --freakmode-gray-300: #d1d5db;
+  --freakmode-gray-400: #9ca3af;
   --freakmode-gray-500: #6b7280;
   --freakmode-gray-600: #4b5563;
   --freakmode-gray-700: #374151;

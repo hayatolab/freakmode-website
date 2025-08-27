@@ -8,12 +8,13 @@ export const AppIcon = ({ className, variant = "light" }: Props) => {
 
   return (
     <svg
-      width="234px"
-      height="64px"
+      width="234"
+      height="64"
       viewBox="0 0 234 64"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
+      style={{ height: "auto" }}
     >
       <rect width="64" height="64" rx="24" fill="#FF0004" />
       <path

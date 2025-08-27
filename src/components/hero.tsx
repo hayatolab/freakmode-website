@@ -13,16 +13,10 @@ export const Hero = () => {
 
         {/* Main Heading */}
         <div className="space-y-1 sm:space-y-2">
-          <h1
-            className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold text-freakmode-navy leading-tight px-2"
-            style={{ fontFamily: "var(--font-hagrid)" }}
-          >
+          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold text-freakmode-navy leading-tight px-2 font-hagrid">
             Sua nova maneira de
           </h1>
-          <h1
-            className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold text-freakmode-red leading-tight px-2"
-            style={{ fontFamily: "var(--font-hagrid)" }}
-          >
+          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold text-freakmode-red leading-tight px-2 font-hagrid">
             Construir Músculo
           </h1>
         </div>

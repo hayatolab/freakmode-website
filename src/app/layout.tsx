@@ -58,7 +58,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`${rubik.variable} ${hagridText.variable} antialiased`}>
+      <body
+        className={`${rubik.variable} ${hagridText.variable} font-sans antialiased`}
+      >
         {children}
       </body>
     </html>
