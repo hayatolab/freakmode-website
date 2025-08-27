@@ -1,5 +1,8 @@
+"use client";
+
 import { AppIcon } from "./icons/app-icon";
 import { Button } from "./ui/button";
+import { trackButtonClick } from "../lib/analytics";
 
 export const Header = () => {
   return (
@@ -8,7 +11,7 @@ export const Header = () => {
         <AppIcon className="h-10 sm:h-10 w-auto" />
 
         <div className="inline-flex gap-2 items-center">
-          <Button>
+          <Button onClick={() => trackButtonClick("header_login")}>
             <span className="hidden sm:inline">Entrar no FreakMode</span>
             <span className="sm:hidden">Entrar</span>
           </Button>
